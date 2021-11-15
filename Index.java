@@ -28,6 +28,31 @@ class Index {
       case 4:
         System.out.println("来年" + (age + 1));
         break;
+      default:
+        System.out.println("その他");
+        break;
     }
+
+
+
+    //while,stop
+    int i = 1;
+    while (i < 10) {
+      if(i % 5 == 0){
+        break;
+      }
+      System.out.println(i);
+      i++;
+    }
+
+    //for,skip
+    for (int j = 1; j < 10; j++) {
+      if(j % 3 == 0){
+        continue;
+      }
+      System.out.println(j);
+    }
+
+
   }
 }
