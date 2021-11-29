@@ -76,15 +76,18 @@ class Index {
     //     System.out.println(i);
     //   }
     // }
-    
+
 // for ifの組み合わせ
-    // for(int i = 1; i <= 3; i++){
-    //   for(int j = 3; i >= 1; i--){
-    //     if(i != j){
-    //       // System.out.println("("+i,j+")+("+i,j+")");
-    //     }
-    //   }System.out.println();
-    // }
+    for(int i = 1; i <= 3; i++){
+      for(int j = 3; j >= 1; j--){
+        if(i != j){
+          // System.out.println("("+i,j+")+("+i,j+")");
+          System.out.print('i'+j);
+          System.out.println(j);
+        }
+      }
+      // System.out.println();
+    }
 
 
 // 奇数飲みの合計値の出し方
@@ -123,19 +126,19 @@ class Index {
 
 
 // 表示について
-    System.out.print("アイウエオ");
-    System.out.print("アイウエオ");
-    System.out.print("アイウエオ");
+    // System.out.print("アイウエオ");
+    // System.out.print("アイウエオ");
+    // System.out.print("アイウエオ");
 
-    System.out.println("アイウエオ");
-    System.out.println("アイウエオ");
-    System.out.print("/n");
-    System.out.println("アイウエオ");
+    // System.out.println("アイウエオ");
+    // System.out.println("アイウエオ");
+    // System.out.print("/n");
+    // System.out.println("アイウエオ");
 
 // intとstrの両方を文字列として出力する
-    int num = 5;
-    String str = "Java printメソッド";
-    System.out.printf("【%d分でわかる】%sで文字列を出力する方法", num, str);
+    // int num = 5;
+    // String str = "Java printメソッド";
+    // System.out.printf("【%d分でわかる】%sで文字列を出力する方法", num, str);
 
     // 書式指定子
     // %d = 10進数の整数
