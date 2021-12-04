@@ -1,3 +1,16 @@
+// 実行
+// javac Index.java コンパイルを行う
+// java Index
+
+
+// 汎用的でOSに依存しないメリットがある
+//   例えばmacos、windowsのどちらでも安定して動作するという点
+//   作ったソフトが動く環境を考える手間が省ける
+
+// たくさんのメリットがあるなかで
+// 動かすためのインフラの整備が難しいみたい
+
+
 class Index {
   public static void main(String[] args) {
 
@@ -61,7 +74,7 @@ class Index {
 
     // System.out.println("奇数の和は" + oddSum + "です");
     // System.out.println("偶数の和は" + evenSum + "です");
-      
+
 
 
     // 練習問題
@@ -78,28 +91,29 @@ class Index {
     // }
 
 // for ifの組み合わせ
-    for(int i = 1; i <= 3; i++){
-      for(int j = 3; j >= 1; j--){
-        if(i != j){
-          // System.out.println("("+i,j+")+("+i,j+")");
-          System.out.print('i'+j);
-          System.out.println(j);
-        }
-      }
-      // System.out.println();
-    }
+    // for(int i = 1; i <= 3; i++){
+    //   for(int j = 3; j >= 1; j--){
+    //     if(i != j){
+    //         // 文字列と文字列を足そうとしているからできない
+    //       System.out.println("("+i,j+")+("+i,j+")");
+    //     }
+    //   }
+    //   System.out.println();
+    // }
 
 
 // 奇数飲みの合計値の出し方
     // int sum = 0;
 
     // for (int i = 1; i < 20; i++) {
-    //     if (i % 3 == 0){
-    //         // System.out.println(i);
+    //     if (i % 2 != 0){
+    //         System.out.println(i);
     //         sum += i;
     //     }
     // }
+
     // System.out.println("合計値 = " +  sum);
+
 
 
 // ピラミッド
@@ -114,15 +128,17 @@ class Index {
 //     }
 
 // // 逆ピラミッド
-//     for(int i=0; i<5; i++){
-//       for(int j=0; j<i; j++){
-//         System.out.print(" ");
-//       }
-//       for(int g=0; g<(5-i)*2-1; g++){
-//         System.out.print("*");
-//       }
-//       // System.out.print("\n");
-//     }
+
+    // for(int i=0; i<5; i++){
+    //     // iは繰り返すほど大きくなるがjは常に0スターとでiより小さい間繰り返すので回数を繰り返すだけスペースが増えていく
+    //   for(int j=0; j<i; j++){
+    //     System.out.println(" ");
+    //   }
+    //   for(int a=0; a<(5-i)*2-1; a++){
+    //     System.out.print("*");
+    //   }
+    //   System.out.print("/n");
+    // }
 
 
 // 表示について
@@ -147,5 +163,3 @@ class Index {
 
   }
 }
-// 実行javac Index.java コンパイルを行う
-// java Index
