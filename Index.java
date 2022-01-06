@@ -10,6 +10,8 @@
 // たくさんのメリットがあるなかで
 // 動かすためのインフラの整備が難しいみたい
 
+// String[] argsは、プログラム起動時に指定する値（コマンドライン引数）
+// argsの引数の名前のところはなんでもいいらしい
 
 class Index {
   public static void main(String[] args) {
@@ -124,7 +126,7 @@ class Index {
 //       for(int g=0; g<(i+1)*2-1; g++){
 //         System.out.print("*");
 //       }
-//       System.out.print("");
+//       System.out.println("");
 //     }
 
 // // 逆ピラミッド
