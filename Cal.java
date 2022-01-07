@@ -1,6 +1,6 @@
 // https://kitako.tokyo/lib/JavaExercise.aspx?id=1
 
-class Quest {
+class Cal {
   public static void main(String[] args) {
     int x = 13;
     int y = 17;
@@ -41,7 +41,15 @@ class Quest {
     System.out.println(x * x * x);
 
     // 11,int 型の変数 x に任意の数値を代入し、x を x より小さい任意の数値で割った商と余りを表示するプログラムを作成しなさい。
-    
+    System.out.println((x / 2) + "・・・" + (x % 2));
+
+    // 12,int 型の変数 x に任意の数値を代入し、インクリメント演算子、デクリメント演算子を適用して結果を表示することにより演算子の効果を確認するプログラムを作成しなさい。
+    // インクリメント演算とは、変数の値に1を加算するもの
+    x ++;
+    System.out.println(x);
+    x --;
+    x --;
+    System.out.println(x);
 
   }
 }
