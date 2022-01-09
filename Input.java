@@ -33,4 +33,9 @@ class Input {
 }
 
 // 例外が生じた時は throws されたところで例外処理をする
-// System.out.println(x);
+
+// *BufferedReaderとScannerの違い*
+// BufferedReaderは文字列しか受け取れないが、Scannerは数値も直接受け取れる
+// BufferedReaderはチェック例外の対処が必要（IOException）だが、Scannerは不要
+// BufferedReaderの方がScannerよりパフォーマンスが優れている
+    // ＞＞＞Bufferの方が速くてメモリを食わない
