@@ -116,29 +116,29 @@ class Bifurcation {
     // }
 
     // 解答
-    System.out.println( "曜日を選択してください" );
-    System.out.print( "0=日曜、1=月曜、2=火曜、3=水曜、4=木曜、5=金曜、6=土曜" );
-    int day = Integer.parseInt( br.readLine() );
+    // System.out.println( "曜日を選択してください" );
+    // System.out.print( "0=日曜、1=月曜、2=火曜、3=水曜、4=木曜、5=金曜、6=土曜" );
+    // int day = Integer.parseInt( br.readLine() );
 
-    System.out.println( "時間帯を選択してください" );
-    System.out.print( "0=午前、1=午後、2=夜間" );
-    int zone = Integer.parseInt( br.readLine() );
+    // System.out.println( "時間帯を選択してください" );
+    // System.out.print( "0=午前、1=午後、2=夜間" );
+    // int zone = Integer.parseInt( br.readLine() );
 
-    boolean bopen = true;
+    // boolean bopen = true;
 
-    if( day == 0 )
-        bopen = false;
-    else if( zone == 0 && ( day == 2 || day == 5 ) )
-        bopen = false;
-    else if( zone == 1 && day == 6 )
-        bopen = false;
-    else if( zone == 2 && ( day == 3 || day == 6 ) )
-        bopen = false;
+    // if( day == 0 )
+    //     bopen = false;
+    // else if( zone == 0 && ( day == 2 || day == 5 ) )
+    //     bopen = false;
+    // else if( zone == 1 && day == 6 )
+    //     bopen = false;
+    // else if( zone == 2 && ( day == 3 || day == 6 ) )
+    //     bopen = false;
 
-    if( bopen )
-        System.out.println( "診療しています。" );
-    else
-        System.out.println( "休診です。" );
+    // if( bopen )
+    //     System.out.println( "診療しています。" );
+    // else
+    //     System.out.println( "休診です。" );
 
     // 11,月を表す数値を入力し、その月の初めから年末までにある祝日を表示するプログラムを作成しなさい。*switchを使う
     // １月：元日、成人の日
@@ -151,6 +151,48 @@ class Bifurcation {
     // １０月：体育の日
     // １１月：文化の日、勤労感謝の日
     // １２月：天皇誕生日
+
+    // System.out.println("入力した月の祝日がでます");
+    // int month = Integer.parseInt(br.readLine());
+    // switch(month) {
+    //     case 1:
+    //         System.out.println("元日" );
+    //         System.out.println("成人の日");
+    //         break;
+    //     case 2:
+    //         System.out.println("建国記念の日");
+    //         break;
+    //     case 3:
+    //         System.out.println("春分の日");
+    //         break;
+    //     case 4:
+    //         System.out.println("昭和の日");
+    //         break;
+    //     case 5:
+    //         System.out.println("憲法記念日");
+    //         System.out.println("みどりの日");
+    //         System.out.println("こどもの日");
+    //         break;
+    //     case 6:
+    //     case 7:
+    //         System.out.println("海の日");
+    //         break;
+    //     case 8:
+    //     case 9:
+    //         System.out.println("敬老の日");
+    //         System.out.println("秋分の日");
+    //         break;
+    //     case 10:
+    //         System.out.println("体育の日");
+    //         break;
+    //     case 11:
+    //         System.out.println("文化の日" );
+    //         System.out.println("勤労感謝の日");
+    //         break;
+    //     case 12:
+    //         System.out.println("天皇誕生日");
+    //         break;
+    // }
 
 
     // 12,好きな鮨（すし）を選択させ、それに対応したメッセージを表示する、鮨占いプログラムを作成しなさい。*switchを使う
