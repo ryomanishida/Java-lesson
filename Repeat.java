@@ -127,8 +127,38 @@ class Repeat {
       // else
       //     System.out.println( "引き分け" );
 
+      // 9,自然数（正の整数）を 10 回入力し、最大値、最小値を求めるプログラムを作成しなさい。
+      // BufferedReader br = new BufferedReader(
+      //                     new InputStreamReader( System.in ) );
+      // int max = 0;
+      // int min = 0;
+      // System.out.println( "10回入力してね" );
+      // for(int i = 0; i < 10; i++) {
+      //   int x = Integer.parseInt( br.readLine() );
 
+      //   if(i == 0){
+      //     max = x;
+      //     min = x;
+      //   }else {
+      //     if(max < x){
+      //       max = x;
+      //     }
+      //     if(min > x) {
+      //       min = x;
+      //     }
+      //   }
+      // }
+      // System.out.println( "最大値は" + max);
+      // System.out.println( "最小値は" + min);
 
+      // 10,個数を示す数値を入力し、その個数分だけ‘*’を表示するプログラムを作成しなさい。
+      // BufferedReader br = new BufferedReader(
+      //                     new InputStreamReader( System.in ) );
+      // System.out.println( "入力してね" );
+      // int x = Integer.parseInt( br.readLine() );
+      // for(int i = 0; i < x; i++) {
+      //   System.out.println( "*" );
+      // }
 
 
 
