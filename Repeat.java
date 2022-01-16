@@ -127,6 +127,7 @@ class Repeat {
       // else
       //     System.out.println( "引き分け" );
 
+
       // 9,自然数（正の整数）を 10 回入力し、最大値、最小値を求めるプログラムを作成しなさい。
       // BufferedReader br = new BufferedReader(
       //                     new InputStreamReader( System.in ) );
@@ -151,6 +152,7 @@ class Repeat {
       // System.out.println( "最大値は" + max);
       // System.out.println( "最小値は" + min);
 
+
       // 10,個数を示す数値を入力し、その個数分だけ‘*’を表示するプログラムを作成しなさい。
       // BufferedReader br = new BufferedReader(
       //                     new InputStreamReader( System.in ) );
@@ -160,6 +162,139 @@ class Repeat {
       //   System.out.println( "*" );
       // }
 
+
+      // 11,個数を示す数値を入力し、その個数分だけ 0 ～ 9 の数字を表示するプログラムを作成しなさい。数字は 0, 1, 2, 3, , の順に表示し、9 の次は 0 に戻るものとします。
+      // BufferedReader br = new BufferedReader(
+      //                     new InputStreamReader( System.in ) );
+      // int x = Integer.parseInt(br.readLine());
+      // for(int i = 0; i <= x; i++) {
+      //   System.out.println(i);
+      // }
+
+      // int count = Integer.parseInt(br.readLine());
+      // for(int i = 0, out = 0; i < count; i++) {
+      //   System.out.println(out++);
+      //   if(out > 9){
+      //     out = 0;
+      //   }
+      // }
+
+
+      // 12,数値を繰り返し入力し、合計が 100 を超えたら入力を止めて合計を表示するプログラムを作成しなさい。
+      // BufferedReader br = new BufferedReader(
+      //                     new InputStreamReader( System.in ) );
+
+      // for(int sum = 0; sum > 100;){
+      //   sum += Integer.parseInt(br.readLine());
+      // }
+      // System.out.println(sum);
+
+      // int sum = 0;
+      // while(sum <= 100){
+      //   sum += Integer.parseInt(br.readLine());
+      // }
+      // System.out.println(sum);
+
+
+      // 13,ストライク・カウントを数えるプログラムを作成しなさい。
+      
+      // １球ごとにストライクかボールかを入力する。
+      // ３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
+
+      // BufferedReader br = new BufferedReader(
+      //                     new InputStreamReader( System.in ) );
+      // int s = 0;
+      // int b = 0;
+      // System.out.println("ストライクなら０を、ボールなら1を入力してね");
+
+      // while(s < 3 && b < 4){
+      //   int count = Integer.parseInt(br.readLine());
+      //   if(count == 0){
+      //     s ++;
+      //   }else if(count == 1){
+      //     b ++;
+      //   }else{
+      //     System.out.println("0か１でお願い");
+      //   }
+      // }
+      // System.out.println("ストライク" + s + " ボール" + b);
+
+
+      // 14,前の問題に次の修正を加えなさい。
+
+      // １球ごとにストライク、ボール、ファウルの何れかを入力する。（残念ながらヒットにはなりません）
+      // ファウルの場合、２ストライクまではストライクにカウントするが、３ストライクにはならない。
+      // ３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
+      // BufferedReader br = new BufferedReader(
+      //                     new InputStreamReader( System.in ) );
+      //   int s = 0;
+      //   int b = 0;
+      //   System.out.println("ストライクなら０を、ボールなら1を、ファールなら2を入力してね");
+      //   while(s < 3 && b < 4){
+      //     int j = Integer.parseInt(br.readLine());
+      //     if(j == 0 || (j == 2 && s < 2)) {
+      //       s ++;
+      //     }else if(j == 1){
+      //       b ++;
+      //     }
+      //   }
+      //   if(s == 3){
+      //     System.out.println("ストラックアウト");
+      //   }else if(b == 4){
+      //     System.out.println("ファーボール");
+      //   }
+
+      // 15,入力された数が素数かどうかを判定するプログラムを作成しなさい。
+      // *retutnの後は処理されない特性に注意
+      // BufferedReader br = new BufferedReader(
+      //                     new InputStreamReader( System.in ) );
+      // int x = Integer.parseInt(br.readLine());
+      // if(x < 2){
+      //   System.out.println("素数じゃない");
+      //   return;
+      // }
+
+      // for(int i = 2; i < x; i++){
+      //   if(x % i == 0){
+      //       System.out.println("素数ではありません。");
+      //       return;
+      //   }
+      // }
+      // System.out.println("素数です");
+
+      
+      // 16,2 以上の数値を入力し、素因数分解した結果を表示しなさい。
+
+
+
+      // 17,九九表（一の段～九の段）を表示するプログラムを作成しなさい。
+
+
+
+
+      // 18,数値を繰り返して入力し、0 が入力されたら入力を止め、それまでの合計を表示するプログラムを作成しなさい。
+
+
+
+
+    // 19,数値を繰り返して入力し、0 が入力されたら入力を止め、平均値を表示するプログラムを作成しなさい。
+
+
+
+    // 20,サイズを示す数値を入力し、何等かの文字で例のような三角形を表示するプログラムを作成しなさい。
+
+
+
+    // 21,サイズを示す数値を入力し、そのサイズの×印を何等かの文字で表示するプログラムを作成しなさい。
+
+
+
+
+    // 22,フィボナッチ数列を表示するプログラムを作成しなさい。
+
+    // 最初の２つの項を 0、1 とし、1000 まで（ 1000 以下の項）を表示するものとします。
+    
+    
 
 
 
