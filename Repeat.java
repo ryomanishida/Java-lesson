@@ -264,7 +264,22 @@ class Repeat {
 
       
       // 16,2 以上の数値を入力し、素因数分解した結果を表示しなさい。
-
+      BufferedReader br = new BufferedReader(
+                          new InputStreamReader( System.in ) );
+      int x = Integer.parseInt(br.readLine());
+      if(x < 2){
+          System.out.println("素数じゃない");
+          return;
+        }
+      for(int i = 2; x > 1; i++){
+        if(x % i == 0){
+          x /= i;
+          System.out.print(i + " ");
+        }else{
+          System.out.print(x + " ");
+          return;
+        }
+      }
 
 
       // 17,九九表（一の段～九の段）を表示するプログラムを作成しなさい。
