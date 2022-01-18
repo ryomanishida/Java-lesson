@@ -197,7 +197,6 @@ class Repeat {
 
 
       // 13,ストライク・カウントを数えるプログラムを作成しなさい。
-      
       // １球ごとにストライクかボールかを入力する。
       // ３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
 
@@ -221,7 +220,6 @@ class Repeat {
 
 
       // 14,前の問題に次の修正を加えなさい。
-
       // １球ごとにストライク、ボール、ファウルの何れかを入力する。（残念ながらヒットにはなりません）
       // ファウルの場合、２ストライクまではストライクにカウントするが、３ストライクにはならない。
       // ３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
@@ -244,6 +242,7 @@ class Repeat {
       //     System.out.println("ファーボール");
       //   }
 
+      // ***
       // 15,入力された数が素数かどうかを判定するプログラムを作成しなさい。
       // *retutnの後は処理されない特性に注意
       // BufferedReader br = new BufferedReader(
@@ -262,42 +261,75 @@ class Repeat {
       // }
       // System.out.println("素数です");
 
-      
-      // 16,2 以上の数値を入力し、素因数分解した結果を表示しなさい。
-      BufferedReader br = new BufferedReader(
-                          new InputStreamReader( System.in ) );
-      int x = Integer.parseInt(br.readLine());
-      if(x < 2){
-          System.out.println("素数じゃない");
-          return;
-        }
-      for(int i = 2; x > 1; i++){
-        if(x % i == 0){
-          x /= i;
-          System.out.print(i + " ");
-        }else{
-          System.out.print(x + " ");
-          return;
-        }
-      }
+      // *****
+      // 16,2 以上の数値を入力し、素因数分解した結果を表示しなさい
+      // BufferedReader br = new BufferedReader(
+      //                     new InputStreamReader( System.in ) );
+      // int x = Integer.parseInt(br.readLine());
+      // if(x < 2){
+      //     System.out.println("素数じゃない");
+      //     return;
+      //   }
+      // for(int i = 2; x > 1; i++){
+      //   while(x % i == 0){
+      //     x /= i;
+      //     System.out.print(i + " ");
+      //   }
+      // }
 
 
-      // 17,九九表（一の段～九の段）を表示するプログラムを作成しなさい。
+    // 17,九九表（一の段～九の段）を表示するプログラムを作成しなさい。
+    // for(int x = 1; x < 10; x++){
+    //   for(int y = 1; y <10; y++){
+    //     // System.out.print(x + "*" + y + "=" + x * y + " ");
+    //     System.out.printf("%d * %d = ", x,y);
+    //     System.out.print(x * y + "  ");
+    //   }
+    //   System.out.println();
+    // }
 
 
+    // 18,数値を繰り返して入力し、0 が入力されたら入力を止め、それまでの合計を表示するプログラムを作成しなさい。
+    // BufferedReader br = new BufferedReader(
+    //                       new InputStreamReader( System.in ) );
+    //   int x = 1;
+    //   int sum = 0;
+    //   while(x != 0){
+    //     x = Integer.parseInt(br.readLine());
+    //     sum += x;
+    //   }
+    //   System.out.println("入力値の合計：" + sum);
 
-
-      // 18,数値を繰り返して入力し、0 が入力されたら入力を止め、それまでの合計を表示するプログラムを作成しなさい。
-
-
+      // 解答
+      // int sum = 0;
+      // for( ; ; ){
+      //   int x = Integer.parseInt(br.readLine());
+      //   sum += x;
+      //   if(x == 0){
+      //     break;
+      //   }
+      // }
+      // System.out.println("入力値の合計：" + sum);
 
 
     // 19,数値を繰り返して入力し、0 が入力されたら入力を止め、平均値を表示するプログラムを作成しなさい。
+      // BufferedReader br = new BufferedReader(
+      //                       new InputStreamReader( System.in ) );
+      // int sum = 0;
+      // int icount = 0;
+      // for(; ;){
+      //   int x = Integer.parseInt(br.readLine());
+      //   sum += x;
+      //   if(x == 0){
+      //     break;
+      //   }
+      //   icount ++;
+      // }
+      // System.out.println("入力値の平均：" + sum / icount);
 
 
-
-    // 20,サイズを示す数値を入力し、何等かの文字で例のような三角形を表示するプログラムを作成しなさい。
-
+    // 20,サイズを示す数値を入力し、何かの文字でそのサイズの三角形を表示するプログラムを作成しなさい。
+    
 
 
     // 21,サイズを示す数値を入力し、そのサイズの×印を何等かの文字で表示するプログラムを作成しなさい。
@@ -306,10 +338,8 @@ class Repeat {
 
 
     // 22,フィボナッチ数列を表示するプログラムを作成しなさい。
-
     // 最初の２つの項を 0、1 とし、1000 まで（ 1000 以下の項）を表示するものとします。
-    
-    
+
 
 
 
