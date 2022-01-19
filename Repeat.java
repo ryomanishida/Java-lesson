@@ -329,19 +329,58 @@ class Repeat {
 
 
     // 20,サイズを示す数値を入力し、何かの文字でそのサイズの三角形を表示するプログラムを作成しなさい。
-    
+    // BufferedReader br = new BufferedReader(
+    //                         new InputStreamReader( System.in ) );
+    // int x = Integer.parseInt(br.readLine());
+    // for(int i = 0; i <= x; i++){
+    //   for(int j = 0; j <= i; j++){
+    //     System.out.print("*");
+    //   }
+    //   System.out.println();
+    // }
 
 
     // 21,サイズを示す数値を入力し、そのサイズの×印を何等かの文字で表示するプログラムを作成しなさい。
+    // BufferedReader br = new BufferedReader(
+    //                       new InputStreamReader(System.in));
+    // int size = Integer.parseInt(br.readLine());
 
+    // for(int i = 0; i < size; i++){
+    //     // System.out.println("*");
+    //     // for(int j = 0 ; j <= i ; j++){
+    //     //   System.out.print(" ");
+    //     // }
 
+    //     // 解答
+    //     for(int j = 0 ; j < size ; j++){
+    //         if(i == j || (size - i - 1) == j)
+    //             System.out.print("*");
+    //         else
+    //             System.out.print(" ");
+    //     }
+    //     System.out.println("");
+    // }
 
 
     // 22,フィボナッチ数列を表示するプログラムを作成しなさい。
     // 最初の２つの項を 0、1 とし、1000 まで（ 1000 以下の項）を表示するものとします。
+    // int []numbers = {0,1};
+    // int fibo = 0;
+    // // System.out.print(numbers[0]);
+    // for(int i = 2; fibo <= 1000; i++){
+    //   fibo += 1;
+    // }
 
+    int n1 = 0;
+    int n2 = 1;
+    int n3 = n1 + n2;
 
-
+    while(n1 <= 1000){
+      System.out.print(n1 + ",");
+      n1 = n2;
+      n2 = n3;
+      n3 = n1 + n2;
+    }
 
   }
 }
