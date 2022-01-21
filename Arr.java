@@ -48,25 +48,25 @@ public class Arr {
     // }
 
     // 解答
-    BufferedReader br = new BufferedReader(
-                            new InputStreamReader( System.in ) );
-    int values[] = new int[10];
+    // BufferedReader br = new BufferedReader(
+    //                         new InputStreamReader( System.in ) );
+    // int values[] = new int[10];
 
-    for( int i = 0 ; i < 10 ; i++ ){
-        values[i] = Integer.parseInt( br.readLine() );
-    }
+    // for( int i = 0 ; i < 10 ; i++ ){
+    //     values[i] = Integer.parseInt( br.readLine() );
+    // }
 
-    System.out.print( "\n偶数：" );
-    for( int n : values ){
-        if( n % 2 == 0 )
-            System.out.print( n + " " );
-    }
+    // System.out.print( "\n偶数：" );
+    // for( int n : values ){
+    //     if( n % 2 == 0 )
+    //         System.out.print( n + " " );
+    // }
 
-    System.out.print( "\n奇数：" );
-    for( int n : values ){
-        if( n % 2 != 0 )
-            System.out.print( n + " " );
-    }
+    // System.out.print( "\n奇数：" );
+    // for( int n : values ){
+    //     if( n % 2 != 0 )
+    //         System.out.print( n + " " );
+    // }
 
 
     // 4, 数値を繰り返して入力し、合計が 100 を超えた場合、または入力が 10 回行われた場合、
@@ -84,19 +84,19 @@ public class Arr {
     // }
 
     // 解答
-    int values[] = new int[10];
-    int cnt, sum;
+    // int values[] = new int[10];
+    // int cnt, sum;
 
-    for( cnt = 0, sum = 0 ; cnt < 10 && sum <= 100 ; cnt++ ){
-        values[cnt] = Integer.parseInt( br.readLine() );
-        sum += values[cnt];
-    }
+    // for( cnt = 0, sum = 0 ; cnt < 10 && sum <= 100 ; cnt++ ){
+    //     values[cnt] = Integer.parseInt( br.readLine() );
+    //     sum += values[cnt];
+    // }
 
-    for( int i = 0 ; i < cnt ; i ++ ){
-        System.out.print( "\n" + values[i] );
-    }
+    // for( int i = 0 ; i < cnt ; i ++ ){
+    //     System.out.print( "\n" + values[i] );
+    // }
 
-    
+
     // 5, 次のコードに追加し、入力された数値を 16 桁の２進数で表示するプログラムを完成させなさい。
     // BufferedReader br = new BufferedReader(
     //                         new InputStreamReader( System.in ) );
@@ -104,27 +104,38 @@ public class Arr {
 
     // int binary[] = new int[16];
 
-    // // 配列 binaryに0か1を代入する
-
-    // for( int i = 0 ; i < 16 ; i++ )
-    //     System.out.print( binary[i] );
+    // for( int i = 15; i >= 0; i--, value /= 2){
+    //   binary[i] = value % 2;
+    // }
+    // System.out.print("2進数：");
+    // for( int i = 0 ; i < 16 ; i++ ){
+    //     System.out.print(binary[i] );
+    // }
 
 
 
     // 6, 次のコードに追加し、九九表を表示するプログラムを完成させなさい。
-    // BufferedReader br = new BufferedReader(
-    //       new InputStreamReader( System.in ) );
-    // int kuku[][] = new int[9][];
+    BufferedReader br = new BufferedReader(
+                          new InputStreamReader( System.in ) );
+    int kuku[][] = new int[9][];
 
-    // // 配列 kuku に値を代入する
+    for( int i = 0 ; i < 9 ; i++ ){
+      kuku[i] = new int[9];
 
-    // for( int i = 0 ; i < 9 ; i++ )
-    // {
-    // for( int j = 0 ; j < 9 ; j++ )
-    // System.out.printf( " %2d", kuku[i][j] );
+      for( int j = 0 ; j < 9 ; j++ ){
+        kuku[i][j] = ( i + 1 ) * ( j + 1 );
+      }
+    }
 
-    // System.out.println();
-    // }
+    for( int i = 0 ; i < 9 ; i++ ){
+      for( int j = 0 ; j < 9 ; j++ ){
+        System.out.printf( " %2d", kuku[i][j] );
+
+        System.out.println();
+      }
+    }
+
+
 
   }
 }

@@ -279,14 +279,14 @@ class Repeat {
 
 
     // 17,九九表（一の段～九の段）を表示するプログラムを作成しなさい。
-    // for(int x = 1; x < 10; x++){
-    //   for(int y = 1; y <10; y++){
-    //     // System.out.print(x + "*" + y + "=" + x * y + " ");
-    //     System.out.printf("%d * %d = ", x,y);
-    //     System.out.print(x * y + "  ");
-    //   }
-    //   System.out.println();
-    // }
+    for(int x = 1; x < 10; x++){
+      for(int y = 1; y < 10; y++){
+        // System.out.print(x + "*" + y + "=" + x * y + " ");
+        System.out.printf("%d * %d = ", x,y);
+        System.out.print(x * y + "  ");
+      }
+      System.out.println();
+    }
 
 
     // 18,数値を繰り返して入力し、0 が入力されたら入力を止め、それまでの合計を表示するプログラムを作成しなさい。
