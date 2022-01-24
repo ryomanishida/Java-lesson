@@ -2,6 +2,7 @@
 // javac Index.java コンパイルを行う
 // java Index
 
+// "\n" == 改行   バックスラッシュの打ち方option+¥
 
 // 汎用的でOSに依存しないメリットがある
 //   例えばmacos、windowsのどちらでも安定して動作するという点
