@@ -1,5 +1,9 @@
 import java.io.*;
 
+import javax.swing.ImageIcon;
+
+
+// 6,7,8要復習
 public class Arr {
   public static void main(String[] args) throws IOException{
 
@@ -112,35 +116,66 @@ public class Arr {
 
 
     // 6, 次のコードに追加し、九九表を表示するプログラムを完成させなさい。
-      BufferedReader br = new BufferedReader(
-                            new InputStreamReader( System.in ) );
-      int kuku[][] = new int[9][];
+      // BufferedReader br = new BufferedReader(
+      //                       new InputStreamReader( System.in ) );
+      // int kuku[][] = new int[9][];
       
-      // 配列 kuku に値を代入する
-      for( int i = 0 ; i < 9 ; i++ ){
-          kuku[i] = new int[9];
+      // // 配列 kuku に値を代入する
+      // for( int i = 0 ; i < 9 ; i++ ){
+      //     kuku[i] = new int[9];
 
-          for( int j = 0 ; j < 9 ; j++ ){
-              kuku[i][j] = ( i + 1 ) * ( j + 1 );
-          }
-      }
+      //     for( int j = 0 ; j < 9 ; j++ ){
+      //         kuku[i][j] = ( i + 1 ) * ( j + 1 );
+      // }
 
 
-      for( int i = 0 ; i < 9 ; i++ ){
-          for( int j = 0 ; j < 9 ; j++ ){
-              System.out.printf( " %2d", kuku[i][j] );
-          }
+      // for( int i = 0 ; i < 9 ; i++ ){
+      //     for( int j = 0 ; j < 9 ; j++ ){
+      //         System.out.printf( " %2d", kuku[i][j] );
+      //     }
       
-          System.out.println();
-      }
+      //     System.out.println();
+      // }
 
 
-    // 7,1 桁の数値（ 1 ～ 9 に限定）を２つ入力し、その積を表示するプログラムを作成しなさい。ただし、九九の計算結果が入った配列を予め作成して利用すること。（前問を参考に）
+    // 7,1 桁の数値（ 1 ～ 9 に限定）を２つ入力し、その積を表示するプログラムを作成しなさい。
+    // ただし、九九の計算結果が入った配列を予め作成して利用すること。（前問を参考に）
+    
+    // BufferedReader br = new BufferedReader(
+    //                         new InputStreamReader( System.in ) );
+    // int kuku[][] = new int [9][9];
+    // for( int i = 0; i < 9; i++){
+    //   for( int j = 0; j < 9; j++){
+    //     kuku[i][j] = (i + 1) * (j + 1);
+    //   }
+    // }
+    // int x = Integer.parseInt( br.readLine() );
+    // int y = Integer.parseInt( br.readLine() );
 
-
+    // System.out.println(kuku[x-1][y-1]);
 
     // 8,整数を 10 回入力し、小さい順に並べ替えて表示するプログラムを作成しなさい。
 
+    BufferedReader br = new BufferedReader(
+                            new InputStreamReader( System.in ) );
+    int values[] = new int[10];
+      
+    for( int i = 0 ; i < 10 ; i++ ){
+        values[i] = Integer.parseInt( br.readLine() );
+    }
+      
+    for( int i = 0 ; i < 10 ; i++ ){
+          for( int j = i + 1 ; j < 10 ; j++ ){
+              if( values[i] > values[j] ){
+                  int t = values[i];
+                  values[i] = values[j];
+                  values[j] = t;
+              }
+          }
+    }
+      
+    for( int i = 0 ; i < 10 ; i++ )
+        System.out.print( values[i] + " " );
 
 
   }
