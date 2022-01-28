@@ -34,12 +34,114 @@ public class Method {
   // }
 
 
-  3,２つの整数の大きい方を選ぶメソッドを作成しなさい。
-  ２つの int 型引数を取り、大きい方の数値を戻り値として返すこと。
-  また、このメソッドを使用して、int 型の変数 x、y、z にそれぞれ数値を入力し、
-  最も大きい数値を表示するプログラムを作成しなさい。
+  // 3,２つの整数の大きい方を選ぶメソッドを作成しなさい。
+  // ２つの int 型引数を取り、大きい方の数値を戻り値として返すこと。
+  // また、このメソッドを使用して、int 型の変数 x、y、z にそれぞれ数値を入力し、
+  // 最も大きい数値を表示するプログラムを作成しなさい。
+
+  // public static void main( String[]args ) throws IOException {
+  //   BufferedReader br = new BufferedReader(
+  //                         new InputStreamReader( System.in ) );
+  //   int x = Integer.parseInt(br.readLine());
+  //   int y = Integer.parseInt(br.readLine());
+  //   int z = Integer.parseInt(br.readLine());
+  //   System.out.println( max(x, max(y,z)) );
+  // }
+
+  // public static int max(int a, int b){
+  //   if(a > b){
+  //     return a;
+  //   }else{
+  //     return b;
+  //   }
+  // }
+
+  // 4,サイズを示す数値（int）を引数とし、
+  // 何等かの文字で例のような三角形を表示するメソッドを作成しなさい。
+  // また、このメソッドを使用してサイズ 3、4、5 の３つの三角形を表示するプログラムを作成
+
+    // public static void main(String[]args){
+    //   triangle(3);
+    //   triangle(4);
+    //   triangle(5);
+    // }
+    // static void triangle(int size){
+    //   for(int i = 0; i < size; i++){
+    //     for(int j = 0; j <= i; j++){
+    //       System.out.print("*");
+    //     }
+    //     System.out.println();
+    //   }
+    //   System.out.println();
+    // }
+
+    // 5,サイズを示す数値と、表示する文字を引数とし、
+    // 三角形を表示するメソッドを作成しなさい。
+    // このメソッドを使用して、サイズと文字の異なる３つの三角形を表示しなさい。
+    // ※ 	サイズを示す引数は int 型、表示する文字の引数は char 型にする。
+    
+    // public static void main(String[]args) {
+    //   triangle(3, '*');
+    //   triangle(4, '+');
+    //   triangle(5, '?');
+    // }
+
+    // static void triangle(int size, char c1){
+    //   for(int i = 0; i < size; i++){
+    //     for(int j = 0; j <= i; j++){
+    //       System.out.print(c1);
+    //     }
+    //     System.out.println();
+    //   }
+    //   System.out.println();
+    // }
 
 
+    // 6,九九のひとつの段を表示するメソッドを作成しなさい。
+    // 何の段（ 1 ～ 9 ）であるかを引数とします。
+    // このメソッドを使用して、九九表を作成しなさい。
+    // public static void main(String[]args){
+    //   for(int i = 1; i < 10; i++){
+    //     kuku(i);
+    //   }
+    // }
 
+    // static void kuku(int num){
+    //   for(int i = 1; i < 10; i++){
+    //     System.out.print(" " + num * i);
+    //     // System.out.printf( " %2d", num * i );
+    //   }
+    //   System.out.println();
+    // }
+
+
+    // 7,ある数が素数かどうかを判定するメソッドを作成しなさい。
+    // このメソッドを使用して 10000 以上 10100 未満の素数をすべて表示する
+    // プログラムを作成しなさい。
+
+    public static void main(String[]args){
+      for(int n = 10000; n < 10100; n++){
+        if(judge(n)){
+          System.out.print(n + " ");
+        }
+      }
+    }
+    static boolean judge(int num){
+      for(int i = 1; i <= (i / 2); i++){
+        if(num % i == 0){
+          return false;
+        }
+      }
+      return true;
+    }
+
+    // 8,メソッドを再帰的に呼び出すことによって、
+    // フィボナッチ数列の n 番目の項を計算するメソッドを作成しなさい。
+    // 最初の２つの項、0 番目を 0、1 番目を 1 とします。
+    // このメソッドを使用して、11 番目から 20 番目までの項を表示する
+    // プログラムを作成しなさい。
+    // ※ 	フィボナッチ数列：
+    // 　それぞれの項がその直前の２つの項の和になっている数列のこと。
+    // 例：0, 1, 1, 2, 3, 5, 8, 13, 21, ...
 
 }
