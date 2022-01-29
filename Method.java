@@ -115,33 +115,50 @@ public class Method {
     // }
 
 
-    // 7,ある数が素数かどうかを判定するメソッドを作成しなさい。
-    // このメソッドを使用して 10000 以上 10100 未満の素数をすべて表示する
-    // プログラムを作成しなさい。
+    // 7,このメソッドを使用して 10000 以上 10100 未満の素数をすべて表示する
 
-    public static void main(String[]args){
-      for(int n = 10000; n < 10100; n++){
-        if(judge(n)){
-          System.out.print(n + " ");
-        }
-      }
-    }
-    static boolean judge(int num){
-      for(int i = 1; i <= (i / 2); i++){
-        if(num % i == 0){
-          return false;
-        }
-      }
-      return true;
-    }
+    // public static void main(String[]args) {
+    //   for(int i = 10000; i < 10010; i++){
+    //     if(judge(i)){
+    //       System.out.print(i + " ");
+    //     }
+    //   }
+    // }
+
+    // static boolean judge(int num){
+    //   for(int j = 1; j <= (j / 2); j++){
+    //     if(num % j == 0){
+    //       return false;
+    //     }
+    //   }
+    //   return true;
+    // }
 
     // 8,メソッドを再帰的に呼び出すことによって、
     // フィボナッチ数列の n 番目の項を計算するメソッドを作成しなさい。
     // 最初の２つの項、0 番目を 0、1 番目を 1 とします。
     // このメソッドを使用して、11 番目から 20 番目までの項を表示する
     // プログラムを作成しなさい。
-    // ※ 	フィボナッチ数列：
-    // 　それぞれの項がその直前の２つの項の和になっている数列のこと。
-    // 例：0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+
+    public static void main(String[]args){
+      for(int i = 11; i <= 20; i++){
+        System.out.print(fibo(i) + " ");
+      }
+    }
+    static int fibo(int num){
+      // int sum = 0;
+      // sum += num;
+      // return sum;
+    }
+
+    // 解答
+    static int Fibonacci( int n ){
+      if( n == 0 )
+          return 0;
+      else if( n == 1 )
+          return 1;
+      else
+          return Fibonacci( n - 2 ) + Fibonacci( n - 1 );
+    }
 
 }
