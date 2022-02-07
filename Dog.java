@@ -1,6 +1,7 @@
 class Dog{
     private String Name;
     private int Age;
+    private String Type;
 
     public void SetName( String nm ){
         Name = nm;
@@ -10,7 +11,11 @@ class Dog{
       Age = age;
     }
 
+    public void SetType( String tp ){
+        Type = tp;
+    }
+
     public void ShowProfile(){
-        System.out.println( "名前は、" + Name + "。歳は" + Age );
+        System.out.println( "名前：" + Name + "歳：" + Age + "犬種" + Type );
     }
 }
