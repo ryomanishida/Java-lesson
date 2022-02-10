@@ -1,27 +1,59 @@
-class CoinCase {
-  private int Y500 = 0;
-  private int Y100 = 0;
-  private int Y50 = 0;
-  private int Y10 = 0;
-  private int Y5 = 0;
-  private int Y1 = 0;
 
 
-  public void AddCoins(int type, int count){
-    switch(type){
-      case 500:
-        Y500 += count;
-        break;
-      case 100:
-        Y100 += count;
+class CoinCase{
+    private int Yen500 = 0;
+    private int Yen100 = 0;
+    private int Yen50 = 0;
+    private int Yen10 = 0;
+    private int Yen5 = 0;
+    private int Yen1 = 0;
+
+    public void AddCoins( int kind, int count ){
+        switch( kind ){
+            case 500:
+                Yen500 += count;
+                break;
+            case 100:
+                Yen100 += count;
+                break;
+            case 50:
+                Yen50 += count;
+                break;
+            case 10:
+                Yen10 += count;
+                break;
+            case 5:
+                Yen5 += count;
+                break;
+            case 1:
+                Yen1 += count;
+                break;
+        }
     }
-  }
 
-  public void GetCount(){
-    a
-  }
+    public int GetCount( int kind ){
+        switch( kind ){
+            case 500:
+                return Yen500;
+            case 100:
+                return Yen100;
+            case 50:
+                return Yen50;
+            case 10:
+                return Yen10;
+            case 5:
+                return Yen5;
+            case 1:
+                return Yen1;
+        }
 
-  public void GetAmount(){
-    a
-  }
+        return 0;
+    }
+
+    public int GetAmount(){
+        return ( Yen500 * 500 ) + ( Yen100 * 100 )
+                + ( Yen50 * 50 ) + ( Yen10 * 10 )
+                + ( Yen5 * 5 ) + Yen1;
+    }
 }
+
